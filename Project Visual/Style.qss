@@ -1,0 +1,288 @@
+QMainWindow {
+    background-color: #f5f5f5;
+
+}
+
+QWidget {
+    font-family: "Segoe UI";
+    font-size: 14px;
+    background-color: #f5f5f5;
+    color:black;
+}
+
+
+QLabel#label_section {
+    font-size: 50px;
+    font-weight: bold;
+    color: #555;
+    margin: 5px 0;
+}
+
+QLineEdit {
+    padding: 7px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #4CAF50;
+}
+
+QLineEdit::placeholder {
+    color: #95a5a6;
+}
+
+QDateEdit, QComboBox {
+    background-color: #ffffff;
+    border: 1px solid #ccd1d9;
+    border-radius: 6px;
+    padding: 6px 8px;
+    color: black;
+}
+
+QDateEdit:focus, QComboBox:focus {
+    border: 2px solid #3498db;
+}
+
+QComboBox QAbstractItemView {
+    background: white;
+    selection-background-color: #3498db;
+    selection-color: white;
+    color: black;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #666;
+    margin-right: 5px;
+}
+
+QPushButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:pressed {
+    background-color: #1f618d;
+}
+
+QPushButton:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+}
+
+QPushButton[flat="true"] {
+    background-color: transparent;
+    color: #4CAF50;
+    text-decoration: underline;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton[flat="true"]:hover {
+    color: #45a049;
+}
+
+QPushButton[text="Hapus"], QPushButton[text="Hapus"] {
+    background-color: #e74c3c;
+}
+
+QPushButton[text=" apus"]:hover, QPushButton[text="Hapus"]:hover {
+    background-color: #c0392b;
+}
+
+QPushButton[text="Selesai"], QPushButton[text="Selesai"] {
+    background-color: #27ae60;
+}
+
+QPushButton[text="Selesai"]:hover, QPushButton[text="Selesai"]:hover {
+    background-color: #1e8449;
+}
+
+QPushButton[text="Refresh"], QPushButton[text="Refresh"] {
+    background-color: #FFA500;
+}
+
+QPushButton[text="Refresh"]:hover, QPushButton[text="Refresh"]:hover {
+    background-color: #FF8C00;
+}
+
+QTableWidget {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    gridline-color: #ecf0f1;
+    selection-background-color: #3498db;
+    selection-color: white;
+    color: black;
+    alternate-background-color: #f9f9f9;
+}
+
+QTableWidget::item {
+    padding: 5px;
+}
+
+QTableWidget::item:selected {
+    background-color: #3498db;
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #34495e;
+    color: white;
+    padding: 8px;
+    border: 1px solid #2c3e50;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+QHeaderView::section:hover {
+    background-color: #2c3e50;
+}
+
+QScrollBar:vertical {
+    background: #ecf0f1;
+    width: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background: #95a5a6;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #7f8c8d;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    background: #ecf0f1;
+    height: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #95a5a6;
+    border-radius: 6px;
+    min-width: 20px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #7f8c8d;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+QMenuBar {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 4px;
+    border-bottom: 2px solid #bdc3c7;
+    
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected {
+    background-color: #3498db;
+    color: white;
+}
+
+QMenuBar::item:pressed {
+    background-color: #2980b9;
+}
+
+QMenu {
+    background-color: white;
+    color: #2c3e50;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+QMenu::item {
+    padding: 8px 25px;
+    border-radius: 3px;
+}
+
+QMenu::item:selected {
+    background-color: #3498db;
+    color: white;
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: #ecf0f1;
+    margin: 5px 10px;
+}
+
+QFrame[frameShape="4"] {
+    color: #bdc3c7;
+}
+
+QMessageBox {
+    background-color: white;
+}
+
+QMessageBox QLabel {
+    color: #2c3e50;
+    font-size: 13px;
+}
+
+QMessageBox QPushButton {
+    min-width: 80px;
+    padding: 6px 15px;
+}
+
+QDateEdit::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QDateEdit::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #666;
+    margin-right: 5px;
+}
+
+QDateEdit QCalendarWidget QWidget {
+    background-color: white;
+}
+
+QDateEdit QCalendarWidget QAbstractItemView {
+    background-color: white;
+    selection-background-color: #3498db;
+    selection-color: white;
+}
